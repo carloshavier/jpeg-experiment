@@ -1,11 +1,7 @@
 # jpeg-experiment
-Experiment on JPEG results picking up the correct puzzle position
+Experiment on JPEG results picking up the correct puzzle position: Tests the JPEG-size attack on raw TIFF images, resized to 405 x 270 (a size similar to the one of the Capy challenges)
 
-
-Tests the JPEG-size attack on raw TIFF images, resized to
-405 x 270 (a size similar to the one of the Capy challenges)
-
-This experiment is to check a interesting question from Prof. Kuhn during my presentation mentioning the attack published to Capy, KeyCAPTCHA, Garb and any other puzzle (image recomposition) CAPTCHAs. He commented that maybe the good results were related to the images having being pre-compressed using JPEG - interesting idea!. That is why I run this experiment using RAW images.
+This experiment is to check a very interesting question from Prof. Kuhn during my presentation mentioning the attack published to Capy, KeyCAPTCHA, Garb and any other puzzle (image recomposition) CAPTCHAs. He commented that maybe the good results were related to the images having being pre-compressed using JPEG - interesting idea!. That is why I run this experiment using RAW images.
 
 Instructions to repeat the experiment:
 
