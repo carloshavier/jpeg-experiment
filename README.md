@@ -5,15 +5,15 @@ This experiment is to check a very interesting question from Prof. Kuhn during m
 
 Instructions to repeat the experiment:
 
- 1 - download RAISE dataset of RAW images from http://mmlab.science.unitn.it/RAISE/
+ 1 - Download RAISE dataset of RAW images from http://mmlab.science.unitn.it/RAISE/
 
- 2 - convert them to .PNG (lossless compression) from RAW TIFF, as RAW TIFF is poorly supported by Python PIL library
+ 2 - Convert them to .PNG (lossless compression) from RAW TIFF, as RAW TIFF is poorly supported by Python PIL library
      we use the following command line (installing first imagemagick)
         $mogrify -format png *.TIF
      and then delete the thumbnails produced
         $rm *-1.png
 
- 3 - run the experiment (function "main"). There is an option that affects the result: 
+ 3 - Run the experiment (function "main"). There is an option that affects the result: 
      if the images are resized & cropped or just cropped to a size similar to Capy
 
      The results I got are:
@@ -25,14 +25,17 @@ Instructions to repeat the experiment:
 
  The experiment - What this program does:
  
- 1 - Pick each image in the indicated directory (RAW TIFF image of 405 x 270 pixels)
+ 1 - Pick each image in the indicated directory (RAW PNG images)
  
- 2 - substitute a 80 x 90 pixel square with a subimage from another random image in the directory
-     this square can be located anywhere in a 10 x 10 pixel grid (as does Capy)
+     Optionally : crop or crop/resize, maintaining aspect ratio.
  
- 3 - perform the JPEG-size attack (described better in the 
+ 2 - Substitute a 80 x 90 pixel square with a subimage from another random image in the directory
+     This square can be located anywhere in a 10 x 10 pixel grid (as does Capy)
+ 
+ 3 - Perform the JPEG-size attack (described better in the 
      paper "Using JPEG to Measure Image Continuity and Break Capy and Other Puzzle CAPTCHAs", 
      Internet Computing Magazine, Nov/Dec 2015), 
      with quality = 100, and check whether it is successfull
- 4 - save & show statistics (and optionally the images from the challenges and their computed solutions)
+     
+ 4 - Save & show statistics (and optionally the images from the challenges and their computed solutions)
 
