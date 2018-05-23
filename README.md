@@ -33,7 +33,7 @@ Instructions to repeat the experiment:
      This square can be located anywhere in a 10 x 10 pixel grid (as does Capy)
  
  3 - Perform the JPEG-size attack (described better in the 
-     paper "Using JPEG to Measure Image Continuity and Break Capy and Other Puzzle CAPTCHAs", 
+     paper "[Using JPEG to Measure Image Continuity and Break Capy and Other Puzzle CAPTCHAs](https://ieeexplore.ieee.org/abstract/document/7307898/)", 
      Internet Computing Magazine, Nov/Dec 2015), 
      with quality = 100, and check whether it is successfull
      
